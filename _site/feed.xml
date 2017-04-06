@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://abdelrahmanhosny.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://abdelrahmanhosny.github.io/" rel="alternate" type="text/html" /><updated>2017-04-06T02:54:37-04:00</updated><id>https://abdelrahmanhosny.github.io/</id><title>Abdelrahman Hosny</title><subtitle>Research Assistant | Software Engineer</subtitle><entry><title>Cleaning Messy Data Using Open Refine</title><link href="https://abdelrahmanhosny.github.io/Cleaning-Messy-Data-Using-Open-Refine/" rel="alternate" type="text/html" title="Cleaning Messy Data Using Open Refine" /><published>2015-10-07T00:00:00-04:00</published><updated>2015-10-07T00:00:00-04:00</updated><id>https://abdelrahmanhosny.github.io/Cleaning-Messy-Data-Using-Open-Refine</id><content type="html" xml:base="https://abdelrahmanhosny.github.io/Cleaning-Messy-Data-Using-Open-Refine/">&lt;p&gt;This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, …endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ….etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.&lt;/p&gt;
+
+&lt;p&gt;So, in this post I’m giving a brief introduction to &lt;a href=&quot;http://openrefine.org/&quot;&gt;Open Refine&lt;/a&gt; (formerly Google Refine) as a very easy-to-learn tool to prepare your data for further processing.&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;First, download the tool from this &lt;a href=&quot;http://openrefine.org/download.html&quot;&gt;link&lt;/a&gt;. Choose the appropriate version for your operating system. Instructions on how to launch it is given too. It’s noteworthy that Open Refine is a free open source tool that was supported by Google till late 2012. The source code is available on GitHub too if you are kind of a hardcore developer who wants to dig into the details.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-it-do&quot;&gt;What Can It Do?&lt;/h2&gt;
+
+&lt;p&gt;When you first launch the application, it looks like the following picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/cleaning-messy-data/1.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this window, you can first explore your data. Data can be in any of the supported formats listed (TSV, CSV, *SV, excel, JSON, XML and Google sheets).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can Open Refine work on any size of data?&lt;/strong&gt; Yes and No.
+Theoretically, there is no restriction on the data size. So, yes.
+However, it depends on how much memory you installed in your machine as well as how much memory is allocated to Open Refine process itself. If you work with very large data sets, &lt;a href=&quot;https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory&quot;&gt;this link&lt;/a&gt; will tell you how to increase the amount of memory allocated to your process.&lt;/p&gt;
+
+&lt;p&gt;Now, go ahead and choose a file then hit next ..
+(In this exercise, you may use any sample data set or have a list of publicly available data sets you would like to discover from &lt;a href=&quot;http://www.datasciencecentral.com/profiles/blogs/the-free-big-data-sources-everyone-should-know&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&quot;explore-data&quot;&gt;1. Explore Data&lt;/h3&gt;
+
+&lt;p&gt;I have used this data set and got the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/cleaning-messy-data/2.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the top half of the screen, it shows a windows on the data where you can have a look at column names and some sample data (in order). In the bottom half of the screen, it tells you how Open Refine parsed your file (as CSV in my case) and some preview options that you can tweak to get different views. At this point, you are just exploring data. To proceed to edit it, you should click on create project on the top-right corner of the screen.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-the-project-and-clean-your-data&quot;&gt;2. Create The Project and Clean Your Data&lt;/h3&gt;
+
+&lt;p&gt;When the project is created, Open Refine transforms your data into a local database where it can manipulate it faster. Data is not sent over the internet for processing; so don’t worry about your data privacy. My created project page looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/cleaning-messy-data/3.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see that I have near 460k rows as well as the columns. You can navigate through this view using &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;first, previous next, last&amp;gt;&lt;/code&gt; links on the top right.&lt;/p&gt;
+
+&lt;h2 id=&quot;clean-your-data&quot;&gt;Clean Your Data&lt;/h2&gt;
+
+&lt;p&gt;Now comes the meat. What can you do to clean your data? Note that this tool is not automated. You have to tell it what to clean and how to clean it. It just makes the process of cleaning very fast instead of writing a code to clean it.&lt;/p&gt;
+
+&lt;h3 id=&quot;filter&quot;&gt;Filter&lt;/h3&gt;
+
+&lt;p&gt;In a specific column, &lt;img src=&quot;/images/cleaning-messy-data/4.png#right&quot; alt=&quot;_config.yml&quot; /&gt; if you want to filter all rows that have a specific value in this column, hit the small arrow beside column name and click &lt;strong&gt;text filter&lt;/strong&gt;. Write your filter criteria on the left. This will shows only the rows that match your filter.&lt;/p&gt;
+
+&lt;p&gt;Then what to do? You are free to edit each cell separately (hover over the cell and you will see a small edit button) or you can edit the whole column (note that the column in this context mean the filtered one); click the small arrow beside column name and choose edit cells.&lt;/p&gt;
+
+&lt;h3 id=&quot;transform&quot;&gt;Transform&lt;/h3&gt;
+
+&lt;p&gt;The common way to edit multiple cells at once is using a transform function. A transform function is simply something that maps a value -that matches criteria- into another value. I choose “Edit cells” -&amp;gt; “Transform…”
+This will open the following window:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/cleaning-messy-data/5.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You will see a preview on the row number, the old value and the new value (according to the transform function). The easiest way to write a transform function is to use Google Refine Expression Language (GREL) syntax. Here are some of the most popular transforms:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;value.replace(old_value, new_value)&lt;/code&gt; –&amp;gt; to replace a specific value in the text to a new value&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;value.join(some_text)&lt;/code&gt; –&amp;gt; to concatenate some text&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;value.slice(start_index, end_index)&lt;/code&gt; –&amp;gt; to get part of the text starting at the start index and ending at the end index.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;value.split(delimiter)&lt;/code&gt; –&amp;gt; to split the value based on a specific delimiter (you can further split them into columns).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Get a complete list of all function here.&lt;/p&gt;
+
+&lt;h3 id=&quot;infinite-undo-history&quot;&gt;Infinite Undo History&lt;/h3&gt;
+
+&lt;p&gt;Play with your data as much as you like with no worry. You can undo any transform or change you did using the Undo / Redo history on the left.&lt;/p&gt;
+
+&lt;h3 id=&quot;dont-forget-to-export-your-data-&quot;&gt;Don’t Forget to Export Your Data ..&lt;/h3&gt;
+
+&lt;p&gt;All of the work you have done so far is saved in the project (the local database Open Refine created in the back-end). To get your modified clean data, don’t forget to export it from the top right corner ..&lt;/p&gt;
+
+&lt;h2 id=&quot;further-readings-&quot;&gt;Further Readings ..&lt;/h2&gt;
+
+&lt;p&gt;Is that all Open Refine? Absolutely NO. The tool has a lot more to do to clean your data. This is just an introduction. You might find this book helpful and Google search engine will always be your best friend to ask ..&lt;/p&gt;
+
+&lt;p&gt;Happy Cleaning :)&lt;/p&gt;
+
+&lt;p&gt;Acknowledgement: Thanks to Jennifer Eustis [Jennifer.Eustis@lib.uconn.edu] workshop at UConn on Wednesday Oct. 7, 2015&lt;/p&gt;</content><summary>This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, …endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ….etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.</summary></entry><entry><title>Learn Apache Spark On Your Desktop</title><link href="https://abdelrahmanhosny.github.io/Learning-Apache-Spark/" rel="alternate" type="text/html" title="Learn Apache Spark On Your Desktop" /><published>2015-08-06T00:00:00-04:00</published><updated>2015-08-06T00:00:00-04:00</updated><id>https://abdelrahmanhosny.github.io/Learning-Apache-Spark</id><content type="html" xml:base="https://abdelrahmanhosny.github.io/Learning-Apache-Spark/">&lt;p&gt;I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “&lt;em&gt;learn to analyze data first, then do it big&lt;/em&gt;”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with &lt;a href=&quot;http://spark.apache.org/&quot;&gt;Apache Spark&lt;/a&gt; starts. I started learning it from this &lt;a href=&quot;https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info&quot;&gt;edX course&lt;/a&gt;. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.&lt;/p&gt;
+
+&lt;h1 id=&quot;is-it-fast-to-learn&quot;&gt;Is it fast to learn?&lt;/h1&gt;
+
+&lt;p&gt;At first, I thought that there is a barrier to have an environment like that to work unless someone configures it for me. I used to think that big data platforms require advanced configuration and special machine specification. However, this turns to be NOT TRUE. It is &lt;strong&gt;so fast&lt;/strong&gt; to get your hands dirty with coding with Apache Spark on your desktop. No need for system admins, special servers or advanced knowledge. In this post, I will preview how to quickly write your first code with Apache Spark and run it.&lt;/p&gt;
+
+&lt;p&gt;Note: In this post, I will not illustrate Spark API or code details. It is just a getting started guide to break the barrier of learning the platform. In the last section, I will mention resources to learn it.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-apache-spark&quot;&gt;What is Apache Spark?&lt;/h1&gt;
+
+&lt;p&gt;Usually, you think of a traditional algorithm to process some data on a file. When the file becomes larger, you think of possible ways to reduce execution time. The first technique you probably think of is how to parallelize the execution into 2+ threads. Another technique you think of is to read the file in chunks and cache them in memory. More techniques you will think of based on the problem you have. However, all of these techniques actually distracts you from performing the actual work you want to achieve! Here comes cluster computing; and Apache Spark as a very powerful emerging platform. Apache Spark is an open-source framework for cluster computing. Don’t worry if you don’t know what cluster computing is; you don’t need it right now. As a beginner, let’s just start solving our problems of having large files with slow code, then we will have more posts on how cluster computing and Spark achieve that (If you can’t wait: check &lt;a href=&quot;http://spark.apache.org/&quot;&gt;Spark website&lt;/a&gt;). Among all the amazing features tit provides, Spark will remove the hassle of parallelizing your application or providing caching. It will do it for you.&lt;/p&gt;
+
+&lt;h1 id=&quot;standalone-installation&quot;&gt;Standalone Installation&lt;/h1&gt;
+
+&lt;p&gt;The first step is to download Spark and unpack it. Visit the downloads page and select the package &lt;strong&gt;Pre-built for Hadoop 2.6 and later&lt;/strong&gt; and choose &lt;strong&gt;Direct Download&lt;/strong&gt; option. This will download a compressed file. Use any software you like to decompress it. Put the resulting folder in your preferred directory. Basically, here is the directory I have on my machine (you may have slightly different folders as there is a lot of updates to the project):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/learning-spark/1.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;: contains executable files that Spark provides for direct use (like the shell we will use shortly).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf&lt;/code&gt;: contains some configuration files that Spark loads on startup.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;data&lt;/code&gt;: contains some data sets that you can use for testing.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ec2&lt;/code&gt;: contains a script for launching Spark clusters on Amazon EC2.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;examples&lt;/code&gt;: contains examples written in java, python, r and scala. We will use one of them shortly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other folders are used by Spark core.&lt;/p&gt;
+
+&lt;h1 id=&quot;test-sparks-python-shell&quot;&gt;Test Spark’s Python Shell&lt;/h1&gt;
+
+&lt;p&gt;To test your package, open the terminal and type the command: &lt;strong&gt;$ ./bin/pyspark&lt;/strong&gt; You should see the python shell working as following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/learning-spark/2.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To reduce the logging statements printed on the terminal (they are distracting!), do the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;conf&lt;/code&gt; folder.&lt;/li&gt;
+  &lt;li&gt;Copy the file &lt;code class=&quot;highlighter-rouge&quot;&gt;log4j.properties.template&lt;/code&gt; to the same directory and remove the extension &lt;code class=&quot;highlighter-rouge&quot;&gt;.template&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Find the line &lt;code class=&quot;highlighter-rouge&quot;&gt;log4j.rootCategory=INFO&lt;/code&gt;, console and change it to log4j.rootCategory=WARN, console This will print only the warning messages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;run-your-first-code&quot;&gt;Run Your First Code&lt;/h1&gt;
+
+&lt;p&gt;Spark supports Java, Scala, R and Python. In this post, I use python. You can check the documentation for other language options. Let’s try a very simple ad-hoc code to count the number of occurrences of words in a file. On the terminal, write the following lines&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; lines = sc.textFile(&quot;README.md&quot;); 
+&amp;gt;&amp;gt;&amp;gt; counts = lines.flatMap(lambda x: x.split(' ')).map(lambda x: (x, 1)).reduceByKey(lambda x,y: x+y); 
+&amp;gt;&amp;gt;&amp;gt; print counts.collect();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;You will see the output of key-value pairs (word: count).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/learning-spark/3.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! Spark is running on your desktop :-)&lt;/p&gt;
+
+&lt;p&gt;To quit the shell:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; exit();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;how-to-write-your-code-in-a-separate-file-and-execute-it&quot;&gt;How to write your code in a separate file and execute it?&lt;/h1&gt;
+
+&lt;p&gt;At this point, you have tested a very simple application from the shell. In real-world work, you use the shell only for quick debugging purposes. Usually, you have your code in file(s) and execute it. For python, you cannot simply use the terminal to write &lt;code class=&quot;highlighter-rouge&quot;&gt;python main.py&lt;/code&gt; and let it execute. What you need to do is to submit the code to spark engine. We will do so with the word-count code included in the examples folder (python). Open the terminal and type the following command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ bin/spark-submit examples/src/main/python/wordcount.py &quot;README.md&quot;&lt;/code&gt;
+&lt;img src=&quot;/images/learning-spark/4.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You will see the code result. It’s a parsed word: count pairs.&lt;/p&gt;
+
+&lt;h1 id=&quot;whats-next--&quot;&gt;What’s Next ? ..&lt;/h1&gt;
+
+&lt;p&gt;Now, that you have a fully working Spark engine now. Let’s start learning what these APIs are all about. Here are some useful resources to get started:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info&quot;&gt;edX Course&lt;/a&gt; from UC Berkeley.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://shop.oreilly.com/product/0636920028512.do&quot;&gt;Learn Spark&lt;/a&gt; from O’Reilly.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://spark.apache.org/docs/latest/&quot;&gt;Documentation&lt;/a&gt; from Apache.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://databricks.com/training&quot;&gt;Spark Training&lt;/a&gt; from Databricks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy Sparking you applications ;)&lt;/p&gt;</content><summary>I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “learn to analyze data first, then do it big”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with Apache Spark starts. I started learning it from this edX course. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.</summary></entry><entry><title>How to Merge Two Docker Images</title><link href="https://abdelrahmanhosny.github.io/How-to-Merge-Two-Docker-Images/" rel="alternate" type="text/html" title="How to Merge Two Docker Images" /><published>2015-07-11T00:00:00-04:00</published><updated>2015-07-11T00:00:00-04:00</updated><id>https://abdelrahmanhosny.github.io/How-to-Merge-Two-Docker-Images</id><content type="html" xml:base="https://abdelrahmanhosny.github.io/How-to-Merge-Two-Docker-Images/">&lt;p&gt;It’s always said, “&lt;em&gt;Do not try to re-invent the wheel!&lt;/em&gt;”. When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.&lt;/p&gt;
+
+&lt;p&gt;In some cases, you may want to have one container do two different jobs. In other few cases, you may want one Docker image to contain dependencies from two different Docker images. This is easily done as long as you have the Dockerfile of each image. Simply, organize them in one file and build it!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;However&lt;/strong&gt;, if you spend most of the time using ready images from Docker Hub, you do not have their source Dockerfile. I spent some time searching for a tool to use it to merge (or flatten) two different Docker images; that I don’t have their Dockerfiles. I was searching for something to do the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;image1 --
+            \
+             ---&amp;gt; merged_image_12
+            /
+image2 --
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Although this issue was closed before in two different threads (&lt;a href=&quot;https://github.com/docker/docker/issues/3378&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;https://github.com/docker/docker/issues/332&quot;&gt;2&lt;/a&gt;), it arises in some scenarios when you want to do something like that!..&lt;/p&gt;
+
+&lt;h1 id=&quot;is-it-possible-&quot;&gt;Is it possible? ..&lt;/h1&gt;
+
+&lt;p&gt;So, is there any tool that one can use to act like: docker merge image1 image2 merged_image ?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;No!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can not even build a Dockerfile like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM image1
+FROM image2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Simply, because you cannot have multiple base images in a Dockerfile.&lt;/p&gt;
+
+&lt;h1 id=&quot;but-i-need-this-feature&quot;&gt;But, I need this feature!&lt;/h1&gt;
+
+&lt;p&gt;The only solution you have is to get the Dockerfile of these images and organize them in one file, then build. So, can I get the Dockerfile of an image on Docker Hub? The happy news is YES. It is not available online, but you can reverse-engineer it with &lt;code class=&quot;highlighter-rouge&quot;&gt;docker history&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use-it&quot;&gt;How to use it?&lt;/h2&gt;
+
+&lt;p&gt;On your machine, use docker pull to download the images from Docker Hub.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker pull image1
+docker pull image2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, use &lt;code class=&quot;highlighter-rouge&quot;&gt;docker history&lt;/code&gt; to get the commands that were used to build them.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker history --no-trunc=true image1 &amp;gt; image1-dockerfile
+docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Then, open these two files. You can then see the command stack of each image. This holds true because of the fact that Docker images are structured into layers. That is, each command you type in the Dockerfile builds a new image on top of previous images from previous commands. Therefore, you can reverse-engineer images.&lt;/p&gt;
+
+&lt;h1 id=&quot;restrictions&quot;&gt;Restrictions&lt;/h1&gt;
+
+&lt;p&gt;The only scenario when you will not be able to reverse-engineer an image is when the maintainer of the image has used ADD or COPY commands in his Dockerfile. You will see a line like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ADD file:1ac56373f7983caf22&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;or &lt;code class=&quot;highlighter-rouge&quot;&gt;ADD dir:cf6fe659e9d21535844&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is because you cannot get what local files the maintainer used on his machine to include in this image.&lt;/p&gt;
+
+&lt;p&gt;Happy Reverse-Engineering :)&lt;/p&gt;</content><summary>It’s always said, “Do not try to re-invent the wheel!”. When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.</summary></entry><entry><title>Three Solutions to Bi-directional Linking Problem in Docker Compose</title><link href="https://abdelrahmanhosny.github.io/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose/" rel="alternate" type="text/html" title="Three Solutions to Bi-directional Linking Problem in Docker Compose" /><published>2015-07-01T00:00:00-04:00</published><updated>2015-07-01T00:00:00-04:00</updated><id>https://abdelrahmanhosny.github.io/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose</id><content type="html" xml:base="https://abdelrahmanhosny.github.io/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose/">&lt;p&gt;Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is &lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;Docker Compose&lt;/a&gt;. It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.&lt;/p&gt;
+
+&lt;p&gt;Basically, a &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/docker-bi-directional-linking/1.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I would like to mention the &lt;strong&gt;links&lt;/strong&gt; option here. This option enables to container to talk to each other in an internal network created at run-time and destroyed after the application is shutdown. In the above example, when the application is fired up, an entry with the alias name ‘redis’ will be created in /etc/hosts file in web container. This enables web to access services available in redis container.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-problem&quot;&gt;The problem&lt;/h1&gt;
+
+&lt;p&gt;So far, the tool enables you to run multi-container apps with a single command. However, if you have a complicated communication between containers, that might cause a problem and the application will not be run. By complicated communication, I mean that more than one container uses a service from other containers using &lt;code class=&quot;highlighter-rouge&quot;&gt;links&lt;/code&gt; option. To give an example, in the above application, web container uses a service from redis container. If you tried to add &lt;code class=&quot;highlighter-rouge&quot;&gt;links: - web&lt;/code&gt; in redis container, and then run it with docker-compose, you will see the following message:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/docker-bi-directional-linking/2.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Actually, this is one of the historical problems of Docker. The networking system in Docker used to have problems and this is one of its symptoms. You can read more about this problem in &lt;a href=&quot;https://github.com/docker/compose/issues/666&quot;&gt;this issue&lt;/a&gt;. The community proposed to use ambassador pattern as a work-around for this problem. However, this solution adds overhead on your application in addition to the fact that it is after all a work-around; not a docker solution!&lt;/p&gt;
+
+&lt;p&gt;As this was one of the problems I am facing in my application, I have been searching for solutions that utilizes Docker platform and its tools. Here are three possible solutions that I tried and worked for me.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution-1-using-the-new-docker-network-interface&quot;&gt;Solution 1: Using the new docker network interface&lt;/h1&gt;
+
+&lt;p&gt;At the time of writing this post, Docker has announced a lot of new features and tools at &lt;a href=&quot;http://www.dockercon.com/&quot;&gt;DockerCon 2015&lt;/a&gt;, a week ago. One of the most useful advancements is the new networking system. You can check the new experimental features. I had the chance to figure out an easy way to fire up a multi-container application that has sophisticated communication using the new network class.&lt;/p&gt;
+
+&lt;p&gt;Here is what you can do such that two containers see each other in a private network.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-network&quot;&gt;1. Create a network&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker network create mynetwork&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure the network is created by listing all networks&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker network ls&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;attach-containers-to-your-network&quot;&gt;2. Attach containers to your network&lt;/h2&gt;
+
+&lt;p&gt;Open a terminal and run one of your containers as following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it --publish-service web.mynetwork web&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Open another terminal tab and run the other container as following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it --publish-service redis.mynetwork redis&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;containers-see-each-other&quot;&gt;3. Containers see each other!&lt;/h2&gt;
+
+&lt;p&gt;Now, from the first terminal tab, you can ping &lt;code class=&quot;highlighter-rouge&quot;&gt;redis.mynetwork&lt;/code&gt; and receive a reply. Also, from the second terminal tab, you can ping &lt;code class=&quot;highlighter-rouge&quot;&gt;web.mynetwork&lt;/code&gt; and receive a reply. That is services are published under &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;service_name&amp;gt;.&amp;lt;network_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That way, you don’t spin your application with Docker Compose at all. You just create a network and publish services on it. In other words, we are substituting links option in &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; with a network.&lt;/p&gt;
+
+&lt;p&gt;Although the feature is still under experimental tag (at the time of this writing), it is very flexible and I think it is the future of running multi-container apps. So, it is advantageous you follow the main stream of where Docker is going.&lt;/p&gt;
+
+&lt;p&gt;Note: to try experimental features, refer to this &lt;a href=&quot;https://github.com/docker/docker/tree/master/experimental&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution-2-using-docker-swarm-and-compose-with-multi-host-networking&quot;&gt;Solution 2: Using Docker Swarm and Compose with Multi-host Networking&lt;/h1&gt;
+
+&lt;p&gt;Again, this is also an experimental feature to use Swarm and Compose with Multi-host networking. This solution needs more work than the previous solution. However, if you have many containers communicating and you are planning to run them on clusters, this is the best solution.&lt;/p&gt;
+
+&lt;p&gt;To have a step-by-step solution, refer to the original feature on GitHub &lt;a href=&quot;https://github.com/docker/docker/blob/master/experimental/compose_swarm_networking.md&quot;&gt;here&lt;/a&gt;. First, you setup Swarm with multi-host networking and then you can immediately run a compose application after removing the links option. Why? because every container started on this multi-host networking-enables Swarm cluster use “overlay:multihost” network by default, meaning they can all intercommunicate by container name.&lt;/p&gt;
+
+&lt;p&gt;Refer to the illustration here to walk through it.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget that this is an experimental feature. So, give feedback to the authors on GitHub.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution-3-using-external-dns-container&quot;&gt;Solution 3: Using external DNS container&lt;/h1&gt;
+
+&lt;p&gt;A classical solution that I consider as a work-around is using an additional container in your docker-compose.yml file. Add the following container to your file:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnsdock:
+ image: tonistiigi/dnsdock
+ volumes:
+ - /var/run/docker.sock:/run/docker.sock
+ ports:
+ - 172.17.42.1:53:53/udp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And in each container you have to do the following:&lt;/p&gt;
+
+&lt;p&gt;1 . Tell the container where is DNS service is: &lt;code class=&quot;highlighter-rouge&quot;&gt;dns: 172.17.42.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2 . Name each container to be visible for service discovery:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; environment:
+ - DNSDOCK_NAME=web
+ - DNSDOCK_IMAGE=web
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;You use environment variables for this naming. Do the same with redis container (whatever the other container your have).&lt;/p&gt;
+
+&lt;p&gt;3 . Containers see each other under the name &lt;container_name&gt;.&lt;container_name&gt;.docker
+That is redis container can communicate with services on web container at web.web.docker&lt;/container_name&gt;&lt;/container_name&gt;&lt;/p&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;http://sgillis.github.io/posts/2015-03-23-docker-dns.html&quot;&gt;http://sgillis.github.io/posts/2015-03-23-docker-dns.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;in-summary&quot;&gt;In Summary&lt;/h1&gt;
+
+&lt;p&gt;Docker technology is improving so quickly. It has gained community support and is continuously expanding. When solving problems you face, have a look first at the new tools provided around Docker to follow the main stream of development. In this post, I have presented three possible solutions for bi-directional linking problem in Docker Compose; two of them depends on the new networking system that will be available soon. If your application is not sophisticated, you may try the solution of DNS container.&lt;/p&gt;
+
+&lt;p&gt;Do you have other solutions? I’d be happy if you posted them here ..&lt;/p&gt;
+
+&lt;p&gt;Special Thanks to &lt;a href=&quot;https://twitter.com/thibauld&quot;&gt;Thibauld Favre&lt;/a&gt;&lt;/p&gt;</content><summary>Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is Docker Compose. It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.</summary></entry></feed>
