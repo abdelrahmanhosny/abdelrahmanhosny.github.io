@@ -2,6 +2,7 @@
 layout: post
 title: Learn Apache Spark On Your Desktop
 comments: true
+blog_nav: active
 ---
 I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying "*learn to analyze data first, then do it big*". I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don't use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with [Apache Spark](http://spark.apache.org/) starts. I started learning it from this [edX course](https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info). The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.
 

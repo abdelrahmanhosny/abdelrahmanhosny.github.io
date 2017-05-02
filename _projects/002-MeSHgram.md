@@ -2,6 +2,7 @@
 layout: project
 title: MeSHgram
 comments: true
+projects_nav: active
 ---
 
 MeSHgram is a tool for convenient, visual and interactive exploration of the co-occurrence of MeSH terms over the entire PubMed corpus. Such a tool can assist in quantification of known research patterns as well as potentially aiding novel hypotheses generation.

@@ -2,6 +2,7 @@
 layout: post
 title: How to Merge Two Docker Images
 comments: true
+blog_nav: active
 ---
 
 It's always said, "*Do not try to re-invent the wheel!*". When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.

@@ -2,6 +2,7 @@
 layout: post
 title: Cleaning Messy Data Using Open Refine
 comments: true
+blog_nav: active
 ---
 
 This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, ...endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ....etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.

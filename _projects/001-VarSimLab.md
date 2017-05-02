@@ -2,6 +2,7 @@
 layout: project
 title: VarSimLab
 comments: true
+projects_nav: active
 ---
 
 Somatic structure variations (SVs) and copy number variations (CNVs) may result in genetic changes that are directly or indirectly related to different types of neoplasm. Computational tools have been developed to detect structural and copy number variations from next-generation sequencing (NGS) data. However, with no prior knowledge about variants in real samples, those tools have been hindered by the lack of a gold standard benchmark. 

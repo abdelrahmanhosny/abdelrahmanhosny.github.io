@@ -2,6 +2,7 @@
 layout: project
 title: TURING
 comments: true
+projects_nav: active
 ---
 
 ### Open Collaboration

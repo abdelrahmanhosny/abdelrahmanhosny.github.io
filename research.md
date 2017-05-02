@@ -2,6 +2,8 @@
 layout: default
 title: Research
 permalink: /research/
+research_nav: active
+excerpt: My research interests include Algorithms, Machine Learning, Deep Learning, AI, Computational Biology
 ---
 
 ## Interests

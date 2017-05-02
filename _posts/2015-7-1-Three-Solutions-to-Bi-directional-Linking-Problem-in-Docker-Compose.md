@@ -2,6 +2,7 @@
 layout: post
 title: Three Solutions to Bi-directional Linking Problem in Docker Compose
 comments: true
+blog_nav: active
 ---
 
 Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is [Docker Compose](https://docs.docker.com/compose/). It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.

@@ -2,6 +2,7 @@
 layout: project
 title: AlgoPiper
 comments: true
+projects_nav: active
 ---
 
 ### The problem: 

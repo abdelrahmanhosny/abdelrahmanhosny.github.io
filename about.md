@@ -2,6 +2,8 @@
 layout: default
 title: About
 permalink: /about/
+about_nav: active
+excerpt: After working as a Teaching Assistant in the same school for year, I travelled to US to get a Master's in Computer Science and Engineering
 ---
 
 I was born and raised in Upper Egypt. Since there is no major events in my life before high school, I will just skip this part. I graduated high school in 2009, and was ranked first on class all over Egypt in the math section. Perhaps, it was the most important pivot in my life when I realized that I can actually succeed at something. Watch [my interview](https://www.youtube.com/watch?v=56_qUIj-w90) with Mona Al-Shazly at her popular TV show at that time. In addition to receiving multiple awards from different organizations (Coca-Cola Education Award, Assiut Governorate shield, Assiut Municipal Council shield, Teachers Association in Assiut shield), I was awarded a trip to Europe. That was an eye-opener of me to start a new term in my life.

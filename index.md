@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /
+home_nav: active
 ---
 
 I’m a data-driven software engineer carrying out research. I write code, analyze data, read latest research pieces and communicate my thoughts online/offline.

@@ -2,6 +2,8 @@
 layout: default
 title: Teaching
 permalink: /teaching/
+teaching_nav: active
+excerpt: I divide the learning journey into three phases; Connecting, Learning and Applying, and I call it the CLA Journey. That is my teaching philosophy.
 ---
 
 ## Courses Taught
