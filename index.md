@@ -4,12 +4,13 @@ permalink: /
 home_nav: active
 ---
 
-I’m a data-driven software engineer carrying out research. I write code, analyze data, read latest research pieces and communicate my thoughts online/offline.
+I’m a research-oriented software engineer. I write code, analyze data, read latest research pieces and communicate my thoughts online/offline. My goal is to establish an AI-based datacenter in Africa. 
 
 I received my Master's in Computer Science and Engineering from University of Connecticut. My thesis title was *Integrative Analysis of Heterogeneous Genomics Data for Triple-Negative Breast Cancer and High Grade Serous Ovarian Cancer* (online access [here](http://digitalcommons.uconn.edu/gs_theses/1032/)). During that time, I also received a graduate certificate in college instruction from UConn Neag School of Education. Before UConn, I received my Bachelor's in Computer Science from Assiut University in Egypt. You can download my CV [here]({{site.baseurl}}/resources/abdelrahman_cv.pdf).
 
 ### Recent Updates
 
+- **June 2017:** My article: *Cancer: from biology to computer science* appeared in the printed version of ACM XRDS magazine. [here](http://dl.acm.org/citation.cfm?id=3100260)
 - **March 2017:** I will present my paper: Project-based Learning In A Probabilistic Analysis Course In The CS Curriculum at IEEE Integrated STEM Education (ISEC'17) in Princeton, New Jersey.
 - **January 2017:** I will participate in NCBI Hackathon in Washington, DC. *update*: I contributed to [MeSHgram project](http://www.meshgram.org). The source code is available on [GitHub](https://github.com/NCBI-Hackathons/Visualizing_MeSH_Term_Interaction_Over_Time).
 - **Novmeber 2016:** I will defend my Master's thesis at UConn on Wednesday, November 30th. More info can be found [here](http://masters.abdelrahmanhosny.me)
