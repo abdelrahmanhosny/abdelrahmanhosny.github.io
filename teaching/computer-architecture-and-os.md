@@ -17,7 +17,7 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University thi
 </div>
 
 ## Monitor Your Grades
-Keep an eye on your grades (the 10 points mentioned in the rules). link will be available soon !
+Keep an eye on your grades (the 10 points mentioned in the rules). Click on [this link](http://bit.ly/FCI-IS)
 
 ## Reach me out
 Get a reply within 24 hours by emailing me at [abdelrahman@aun.edu.eg](mailto:abdelrahman@aun.edu.eg)
