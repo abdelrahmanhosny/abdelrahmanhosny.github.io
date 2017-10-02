@@ -16,6 +16,10 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University thi
 <!-- Google embed ends -->
 </div>
 
+## Lab Notes
+Week of Oct. 1st:
+<script src="https://gist.github.com/abdelrahmanhosny/d9464b3e956cd3c098bd241d1bab2b8c.js"></script>
+
 ## Monitor Your Grades
 Keep an eye on your grades (the 10 points mentioned in the rules). Click on [this link](http://bit.ly/FCI-IS)
 
