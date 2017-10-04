@@ -16,6 +16,8 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University thi
 <!-- Google embed ends -->
 </div>
 
+Hey! watch this [3-minute video](https://www.youtube.com/watch?v=1GLpm3TsJHA) before you start doing your homework :)
+
 ## Lab Notes
 Week of Oct. 1st:
 <script src="https://gist.github.com/abdelrahmanhosny/d9464b3e956cd3c098bd241d1bab2b8c.js"></script>
