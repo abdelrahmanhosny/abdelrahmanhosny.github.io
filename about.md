@@ -10,7 +10,7 @@ I was born and raised in Upper Egypt. Since there is no major events in my life 
 
 I joined a four-year Computer Science undergraduate program at Assiut University. In my junior year, I volunteered for Microsoft Egypt for different programs (Microsoft Student Partners, YouthSpark, Microsoft Tech Clubs). I also got an opportunity to intern at ITWorx Egypt as a software engineer. It was a journey of hard work, success, fun and sometimes disappointment. College life has added too much value to my life, aside from the knowledge learned itself.
 
-After working as a Teaching Assistant in the same school for year, I travelled to US to get a Master's in Computer Science and Engineering. During the two-year study, I had the opportunity to work as a Research Assistant for three different advisors in diverse research projects. I also worked as a part-time Teaching Assistant for junior-level classes in the computer science department. Since I chose to carry out research during that time (and I really enjoyed it), I'm planning to get a *PhD* at some point in my career.
+After working as a Teaching Assistant in the same school for a year, I travelled to the US to get a Master's in Computer Science and Engineering. During the two-year study, I had the opportunity to work as a Research Assistant for three different advisors in diverse research projects. I also worked as a part-time Teaching Assistant for junior-level classes in the computer science department. Since I chose to carry out research during that time (and I really enjoyed it), I'm planning to get a *PhD* at some point in my career.
 
 *More about me?* download my [CV]({{site.baseurl}}/resources/abdelrahman_cv.pdf) and get connected on social media.
 
