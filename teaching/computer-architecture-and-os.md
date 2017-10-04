@@ -6,6 +6,10 @@ teaching_nav: active
 excerpt: This is the home page for the class I'm TA'ing at Assiut University this fall'17.
 ---
 
+
+Hey! watch this [3-minute video](https://www.youtube.com/watch?v=1GLpm3TsJHA) before you start doing your homework :)
+
+
 ## Lab Rules
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
@@ -15,8 +19,6 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University thi
   <iframe src="/teaching/Intro.pdf" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
-
-Hey! watch this [3-minute video](https://www.youtube.com/watch?v=1GLpm3TsJHA) before you start doing your homework :)
 
 ## Lab Notes
 Week of Oct. 1st:
