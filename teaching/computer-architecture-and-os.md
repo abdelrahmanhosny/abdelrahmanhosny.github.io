@@ -9,6 +9,11 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University thi
 
 Hey! watch this [3-minute video](https://www.youtube.com/watch?v=1GLpm3TsJHA) before you start doing your homework :)
 
+## Feedback
+Like our lab sessions? Tell me what you like most to keep doing it. 
+Don't like our lab sessions? Tell me to improve what you don't like.
+
+Submit an anonymous feedback from [this link](https://ahosny.typeform.com/to/qrJGmE)
 
 ## Lab Rules
 <style>
