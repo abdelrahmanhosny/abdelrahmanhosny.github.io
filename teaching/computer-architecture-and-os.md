@@ -7,7 +7,7 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University thi
 ---
 
 
-Hey! watch this [3-minute video](https://www.youtube.com/watch?v=1GLpm3TsJHA) before you start doing your homework :)
+Thank you for everyone who worked so hard to deliver the first week's exercise. You are awesome!
 
 ## Feedback
 Like our lab sessions? Tell me what you like most to keep doing it. 
@@ -26,8 +26,9 @@ Submit an anonymous feedback from [this link](https://ahosny.typeform.com/to/qrJ
 </div>
 
 ## Lab Notes
-Week of Oct. 1st:
-<script src="https://gist.github.com/abdelrahmanhosny/d9464b3e956cd3c098bd241d1bab2b8c.js"></script>
+Week of Oct. 1st: [Number System Conversion](https://gist.github.com/abdelrahmanhosny/d9464b3e956cd3c098bd241d1bab2b8c)
+
+Week of Oct. 8th: An implementation of last week's exercise can be found here: [C++ implementation](https://gist.github.com/abdelrahmanhosny/068398b1f2a2f575f576ef92fc6369a9) or [Python implementation](https://gist.github.com/abdelrahmanhosny/d9464b3e956cd3c098bd241d1bab2b8c)
 
 ## Monitor Your Grades
 Keep an eye on your grades (the 10 points mentioned in the rules). Click on [this link](http://bit.ly/FCI-IS)
