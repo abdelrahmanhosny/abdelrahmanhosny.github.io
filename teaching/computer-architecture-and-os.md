@@ -12,10 +12,6 @@ I developed a chatbot, called Koko, to study Assembly programming with you. You 
 <script> window.fbMessengerPlugins = window.fbMessengerPlugins || { init : function() { FB.init({ appId: "1678638095724206", xfbml: true, version: "v2.6" }); }, callable : [] }; window.fbAsyncInit = window.fbAsyncInit || function() { window.fbMessengerPlugins.callable.forEach( function( item ) { item(); } ); window.fbMessengerPlugins.init(); }; setTimeout( function() { (function(d, s, id){ var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); }, 0); </script> <div class="fb-send-to-messenger" messenger_app_id="1678638095724206" page_id="500710516969561" data-ref="" color="blue" size="large"> </div>
 
 
-## Monitor Your Grades
-Keep an eye on your grades (the 10 points mentioned in the rules). Click on [this link](http://bit.ly/FCI-IS)
-
-
 ## Feedback
 Like our lab sessions? Tell me what you like most to keep doing it. 
 Don't like our lab sessions? Tell me to improve what you don't like.
