@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cleaning Messy Data Using Open Refine – Abdelrahman Hosny – Software Engineer</title>
 
-    <meta charset="utf-8" />
+<head>
+    <title>Cleaning Messy Data Using Open Refine – Abdelrahman Hosny – Software Engineer</title> <meta charset="utf-8" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -28,45 +27,51 @@
 <meta property="og:title" content="Cleaning Messy Data Using Open Refine" />
 <meta property="twitter:title" content="Cleaning Messy Data Using Open Refine" />
 
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="Abdelrahman Hosny - Software Engineer" href="/feed.xml" />
-    <link rel="icon" 
-      type="image/png" 
-      href="/images/favicon.png">
-
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+    <!-- Start of Async Drift Code -->
+    <script>
+        ! function () {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"], t.factory = function (e) {
+                return function () {
+                    var n;
+                    return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                };
+            }, t.methods.forEach(function (e) {
+                t[e] = t.factory(e);
+            }), t.load = function (t) {
+                var e, n, o, i;
+                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script")
+                    , o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js"
+                    , n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+            });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('zacspwp5dykh');
+    </script>
+    <!-- End of Async Drift Code -->
+</head>
 
-  <body>
+<body>
     <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="https://avatars2.githubusercontent.com/u/9287641" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="/">Abdelrahman Hosny</a></h1>
-            <p class="site-description">Software Engineer</p>
-          </div>
-
-          <nav>
-            <a href="/" class="">Home</a>
-            <a href="/about" class="">About</a>
-            <a href="/projects" class="">Projects</a>
-            <a href="/research" class="">Research</a>
-            <a href="/teaching" class="">Teaching</a>  
-            <a href="/blog" class="active">Blog</a>
-          </nav>
-        </header>
-      </div>
+        <div class="container">
+            <header class="masthead clearfix">
+                <a href="/" class="site-avatar"><img src="https://avatars2.githubusercontent.com/u/9287641" /></a>
+                <div class="site-info">
+                    <h1 class="site-name"><a href="/">Abdelrahman Hosny</a></h1>
+                    <p class="site-description">Software Engineer</p>
+                </div>
+                <nav> <a href="/" class="">Home</a> <a href="/about" class="">About</a> <a href="/projects" class="">Projects</a> <a href="/research" class="">Research</a> <a href="/teaching" class="">Teaching</a> <a href="/blog" class="active">Blog</a> </nav>
+            </header>
+        </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      <article class="post">
+    <div id="main" role="main" class="container"> <article class="post">
   <h1>Cleaning Messy Data Using Open Refine</h1>
 
   <div class="entry">
@@ -93,7 +98,7 @@ However, it depends on how much memory you installed in your machine as well as 
 <p>Now, go ahead and choose a file then hit next ..
 (In this exercise, you may use any sample data set or have a list of publicly available data sets you would like to discover from <a href="http://www.datasciencecentral.com/profiles/blogs/the-free-big-data-sources-everyone-should-know">here</a>)</p>
 
-<h3 id="explore-data">1. Explore Data</h3>
+<h3 id="1-explore-data">1. Explore Data</h3>
 
 <p>I have used this data set and got the following:</p>
 
@@ -101,7 +106,7 @@ However, it depends on how much memory you installed in your machine as well as 
 
 <p>In the top half of the screen, it shows a windows on the data where you can have a look at column names and some sample data (in order). In the bottom half of the screen, it tells you how Open Refine parsed your file (as CSV in my case) and some preview options that you can tweak to get different views. At this point, you are just exploring data. To proceed to edit it, you should click on create project on the top-right corner of the screen.</p>
 
-<h3 id="create-the-project-and-clean-your-data">2. Create The Project and Clean Your Data</h3>
+<h3 id="2-create-the-project-and-clean-your-data">2. Create The Project and Clean Your Data</h3>
 
 <p>When the project is created, Open Refine transforms your data into a local database where it can manipulate it faster. Data is not sent over the internet for processing; so don’t worry about your data privacy. My created project page looks like:</p>
 
@@ -177,13 +182,10 @@ This will open the following window:</p>
 </div>
 
 </article>
-
-    </div>
-
+ </div>
     <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          
+        <div class="container">
+            <footer class="footer"> 
 <a href="mailto:abdelrahman.hosny@ieee.org"><i class="svg-icon email"></i></a>
 
 
@@ -195,12 +197,9 @@ This will open the following window:</p>
 <a href="https://www.twitter.com/_ahosny"><i class="svg-icon twitter"></i></a>
 
 <a href="https://youtube.com/user/abdelrahmanhosnym"><i class="svg-icon youtube"></i></a>
-<a href="https://plus.google.com/+AbdElRahmanHosny"><i class="svg-icon googleplus"></i></a>
-        </footer>
-      </div>
-    </div>
-
-    
+<a href="https://plus.google.com/+AbdElRahmanHosny"><i class="svg-icon googleplus"></i></a> </footer>
+        </div>
+    </div> 
 	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -216,6 +215,6 @@ This will open the following window:</p>
 	</script>
 	<!-- End Google Analytics -->
 
+ </body>
 
-  </body>
 </html>

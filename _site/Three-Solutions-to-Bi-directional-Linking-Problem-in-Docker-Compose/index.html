@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Three Solutions to Bi-directional Linking Problem in Docker Compose – Abdelrahman Hosny – Software Engineer</title>
 
-    <meta charset="utf-8" />
+<head>
+    <title>Three Solutions to Bi-directional Linking Problem in Docker Compose – Abdelrahman Hosny – Software Engineer</title> <meta charset="utf-8" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -28,45 +27,51 @@
 <meta property="og:title" content="Three Solutions to Bi-directional Linking Problem in Docker Compose" />
 <meta property="twitter:title" content="Three Solutions to Bi-directional Linking Problem in Docker Compose" />
 
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="Abdelrahman Hosny - Software Engineer" href="/feed.xml" />
-    <link rel="icon" 
-      type="image/png" 
-      href="/images/favicon.png">
-
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+    <!-- Start of Async Drift Code -->
+    <script>
+        ! function () {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"], t.factory = function (e) {
+                return function () {
+                    var n;
+                    return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                };
+            }, t.methods.forEach(function (e) {
+                t[e] = t.factory(e);
+            }), t.load = function (t) {
+                var e, n, o, i;
+                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script")
+                    , o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js"
+                    , n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+            });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('zacspwp5dykh');
+    </script>
+    <!-- End of Async Drift Code -->
+</head>
 
-  <body>
+<body>
     <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="https://avatars2.githubusercontent.com/u/9287641" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="/">Abdelrahman Hosny</a></h1>
-            <p class="site-description">Software Engineer</p>
-          </div>
-
-          <nav>
-            <a href="/" class="">Home</a>
-            <a href="/about" class="">About</a>
-            <a href="/projects" class="">Projects</a>
-            <a href="/research" class="">Research</a>
-            <a href="/teaching" class="">Teaching</a>  
-            <a href="/blog" class="active">Blog</a>
-          </nav>
-        </header>
-      </div>
+        <div class="container">
+            <header class="masthead clearfix">
+                <a href="/" class="site-avatar"><img src="https://avatars2.githubusercontent.com/u/9287641" /></a>
+                <div class="site-info">
+                    <h1 class="site-name"><a href="/">Abdelrahman Hosny</a></h1>
+                    <p class="site-description">Software Engineer</p>
+                </div>
+                <nav> <a href="/" class="">Home</a> <a href="/about" class="">About</a> <a href="/projects" class="">Projects</a> <a href="/research" class="">Research</a> <a href="/teaching" class="">Teaching</a> <a href="/blog" class="active">Blog</a> </nav>
+            </header>
+        </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      <article class="post">
+    <div id="main" role="main" class="container"> <article class="post">
   <h1>Three Solutions to Bi-directional Linking Problem in Docker Compose</h1>
 
   <div class="entry">
@@ -94,7 +99,7 @@
 
 <p>Here is what you can do such that two containers see each other in a private network.</p>
 
-<h2 id="create-a-network">1. Create a network</h2>
+<h2 id="1-create-a-network">1. Create a network</h2>
 
 <p><code class="highlighter-rouge">docker network create mynetwork</code></p>
 
@@ -102,7 +107,7 @@
 
 <p><code class="highlighter-rouge">docker network ls</code></p>
 
-<h2 id="attach-containers-to-your-network">2. Attach containers to your network</h2>
+<h2 id="2-attach-containers-to-your-network">2. Attach containers to your network</h2>
 
 <p>Open a terminal and run one of your containers as following:</p>
 
@@ -112,7 +117,7 @@
 
 <p><code class="highlighter-rouge">docker run -it --publish-service redis.mynetwork redis</code></p>
 
-<h2 id="containers-see-each-other">3. Containers see each other!</h2>
+<h2 id="3-containers-see-each-other">3. Containers see each other!</h2>
 
 <p>Now, from the first terminal tab, you can ping <code class="highlighter-rouge">redis.mynetwork</code> and receive a reply. Also, from the second terminal tab, you can ping <code class="highlighter-rouge">web.mynetwork</code> and receive a reply. That is services are published under <code class="highlighter-rouge">&lt;service_name&gt;.&lt;network_name&gt;</code></p>
 
@@ -136,14 +141,13 @@
 
 <p>A classical solution that I consider as a work-around is using an additional container in your docker-compose.yml file. Add the following container to your file:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>dnsdock:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnsdock:
  image: tonistiigi/dnsdock
  volumes:
  - /var/run/docker.sock:/run/docker.sock
  ports:
  - 172.17.42.1:53:53/udp
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And in each container you have to do the following:</p>
 
@@ -151,11 +155,10 @@
 
 <p>2 . Name each container to be visible for service discovery:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> environment:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> environment:
  - DNSDOCK_NAME=web
  - DNSDOCK_IMAGE=web
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>You use environment variables for this naming. Do the same with redis container (whatever the other container your have).</p>
 
 <p>3 . Containers see each other under the name <container_name>.<container_name>.docker
@@ -195,13 +198,10 @@ That is redis container can communicate with services on web container at web.we
 </div>
 
 </article>
-
-    </div>
-
+ </div>
     <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          
+        <div class="container">
+            <footer class="footer"> 
 <a href="mailto:abdelrahman.hosny@ieee.org"><i class="svg-icon email"></i></a>
 
 
@@ -213,12 +213,9 @@ That is redis container can communicate with services on web container at web.we
 <a href="https://www.twitter.com/_ahosny"><i class="svg-icon twitter"></i></a>
 
 <a href="https://youtube.com/user/abdelrahmanhosnym"><i class="svg-icon youtube"></i></a>
-<a href="https://plus.google.com/+AbdElRahmanHosny"><i class="svg-icon googleplus"></i></a>
-        </footer>
-      </div>
-    </div>
-
-    
+<a href="https://plus.google.com/+AbdElRahmanHosny"><i class="svg-icon googleplus"></i></a> </footer>
+        </div>
+    </div> 
 	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -234,6 +231,6 @@ That is redis container can communicate with services on web container at web.we
 	</script>
 	<!-- End Google Analytics -->
 
+ </body>
 
-  </body>
 </html>

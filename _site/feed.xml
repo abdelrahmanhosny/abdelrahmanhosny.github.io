@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://abdelrahmanhosny.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://abdelrahmanhosny.me/" rel="alternate" type="text/html" /><updated>2017-12-01T22:25:23+02:00</updated><id>https://abdelrahmanhosny.me/</id><title>Abdelrahman Hosny</title><subtitle>Software Engineer</subtitle><entry><title>Cleaning Messy Data Using Open Refine</title><link href="https://abdelrahmanhosny.me/Cleaning-Messy-Data-Using-Open-Refine/" rel="alternate" type="text/html" title="Cleaning Messy Data Using Open Refine" /><published>2015-10-07T00:00:00+02:00</published><updated>2015-10-07T00:00:00+02:00</updated><id>https://abdelrahmanhosny.me/Cleaning-Messy-Data-Using-Open-Refine</id><content type="html" xml:base="https://abdelrahmanhosny.me/Cleaning-Messy-Data-Using-Open-Refine/">&lt;p&gt;This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, …endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ….etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-18T01:53:31+02:00</updated><id>http://localhost:4000/</id><title type="html">Abdelrahman Hosny</title><subtitle>Software Engineer</subtitle><entry><title type="html">Cleaning Messy Data Using Open Refine</title><link href="http://localhost:4000/Cleaning-Messy-Data-Using-Open-Refine/" rel="alternate" type="text/html" title="Cleaning Messy Data Using Open Refine" /><published>2015-10-07T00:00:00+02:00</published><updated>2015-10-07T00:00:00+02:00</updated><id>http://localhost:4000/Cleaning-Messy-Data-Using-Open-Refine</id><content type="html" xml:base="http://localhost:4000/Cleaning-Messy-Data-Using-Open-Refine/">&lt;p&gt;This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, …endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ….etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.&lt;/p&gt;
 
 &lt;p&gt;So, in this post I’m giving a brief introduction to &lt;a href=&quot;http://openrefine.org/&quot;&gt;Open Refine&lt;/a&gt; (formerly Google Refine) as a very easy-to-learn tool to prepare your data for further processing.&lt;/p&gt;
 
@@ -21,7 +21,7 @@ However, it depends on how much memory you installed in your machine as well as 
 &lt;p&gt;Now, go ahead and choose a file then hit next ..
 (In this exercise, you may use any sample data set or have a list of publicly available data sets you would like to discover from &lt;a href=&quot;http://www.datasciencecentral.com/profiles/blogs/the-free-big-data-sources-everyone-should-know&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
 
-&lt;h3 id=&quot;explore-data&quot;&gt;1. Explore Data&lt;/h3&gt;
+&lt;h3 id=&quot;1-explore-data&quot;&gt;1. Explore Data&lt;/h3&gt;
 
 &lt;p&gt;I have used this data set and got the following:&lt;/p&gt;
 
@@ -29,7 +29,7 @@ However, it depends on how much memory you installed in your machine as well as 
 
 &lt;p&gt;In the top half of the screen, it shows a windows on the data where you can have a look at column names and some sample data (in order). In the bottom half of the screen, it tells you how Open Refine parsed your file (as CSV in my case) and some preview options that you can tweak to get different views. At this point, you are just exploring data. To proceed to edit it, you should click on create project on the top-right corner of the screen.&lt;/p&gt;
 
-&lt;h3 id=&quot;create-the-project-and-clean-your-data&quot;&gt;2. Create The Project and Clean Your Data&lt;/h3&gt;
+&lt;h3 id=&quot;2-create-the-project-and-clean-your-data&quot;&gt;2. Create The Project and Clean Your Data&lt;/h3&gt;
 
 &lt;p&gt;When the project is created, Open Refine transforms your data into a local database where it can manipulate it faster. Data is not sent over the internet for processing; so don’t worry about your data privacy. My created project page looks like:&lt;/p&gt;
 
@@ -79,7 +79,7 @@ This will open the following window:&lt;/p&gt;
 
 &lt;p&gt;Happy Cleaning :)&lt;/p&gt;
 
-&lt;p&gt;Acknowledgement: Thanks to Jennifer Eustis [Jennifer.Eustis@lib.uconn.edu] workshop at UConn on Wednesday Oct. 7, 2015&lt;/p&gt;</content><summary>This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, …endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ….etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.</summary></entry><entry><title>Learn Apache Spark On Your Desktop</title><link href="https://abdelrahmanhosny.me/Learning-Apache-Spark/" rel="alternate" type="text/html" title="Learn Apache Spark On Your Desktop" /><published>2015-08-06T00:00:00+02:00</published><updated>2015-08-06T00:00:00+02:00</updated><id>https://abdelrahmanhosny.me/Learning-Apache-Spark</id><content type="html" xml:base="https://abdelrahmanhosny.me/Learning-Apache-Spark/">&lt;p&gt;I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “&lt;em&gt;learn to analyze data first, then do it big&lt;/em&gt;”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with &lt;a href=&quot;http://spark.apache.org/&quot;&gt;Apache Spark&lt;/a&gt; starts. I started learning it from this &lt;a href=&quot;https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info&quot;&gt;edX course&lt;/a&gt;. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.&lt;/p&gt;
+&lt;p&gt;Acknowledgement: Thanks to Jennifer Eustis [Jennifer.Eustis@lib.uconn.edu] workshop at UConn on Wednesday Oct. 7, 2015&lt;/p&gt;</content><author><name></name></author><summary type="html">This post discusses a nightmare activity that people working with data face everyday. It is putting the data in a format ready to be processed according to your need. No doubt that working with data sets has become a vital activity in everyday work; not only for developers but also for mathematicians, statisticians, …endless list. The problem is that real data sets have some inconsistencies; for example a variability in data format ( Oct. 7, 2015 vs. 10/07/2015 vs. October, 7 2015, vs. ….etc.). Problems like misspelling, extra spaces, random punctuation or weird capitalization plague your data consistency and accuracy. These problems arise when we retrieve data or work with data from multiple sources that are not inter-operable.</summary></entry><entry><title type="html">Learn Apache Spark On Your Desktop</title><link href="http://localhost:4000/Learning-Apache-Spark/" rel="alternate" type="text/html" title="Learn Apache Spark On Your Desktop" /><published>2015-08-06T00:00:00+02:00</published><updated>2015-08-06T00:00:00+02:00</updated><id>http://localhost:4000/Learning-Apache-Spark</id><content type="html" xml:base="http://localhost:4000/Learning-Apache-Spark/">&lt;p&gt;I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “&lt;em&gt;learn to analyze data first, then do it big&lt;/em&gt;”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with &lt;a href=&quot;http://spark.apache.org/&quot;&gt;Apache Spark&lt;/a&gt; starts. I started learning it from this &lt;a href=&quot;https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info&quot;&gt;edX course&lt;/a&gt;. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.&lt;/p&gt;
 
 &lt;h1 id=&quot;is-it-fast-to-learn&quot;&gt;Is it fast to learn?&lt;/h1&gt;
 
@@ -125,11 +125,10 @@ This will open the following window:&lt;/p&gt;
 
 &lt;p&gt;Spark supports Java, Scala, R and Python. In this post, I use python. You can check the documentation for other language options. Let’s try a very simple ad-hoc code to count the number of occurrences of words in a file. On the terminal, write the following lines&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; lines = sc.textFile(&quot;README.md&quot;); 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; lines = sc.textFile(&quot;README.md&quot;); 
 &amp;gt;&amp;gt;&amp;gt; counts = lines.flatMap(lambda x: x.split(' ')).map(lambda x: (x, 1)).reduceByKey(lambda x,y: x+y); 
 &amp;gt;&amp;gt;&amp;gt; print counts.collect();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;You will see the output of key-value pairs (word: count).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/learning-spark/3.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
@@ -138,9 +137,8 @@ This will open the following window:&lt;/p&gt;
 
 &lt;p&gt;To quit the shell:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; exit();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; exit();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;how-to-write-your-code-in-a-separate-file-and-execute-it&quot;&gt;How to write your code in a separate file and execute it?&lt;/h1&gt;
 
@@ -162,19 +160,18 @@ This will open the following window:&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://databricks.com/training&quot;&gt;Spark Training&lt;/a&gt; from Databricks.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Enjoy Sparking you applications ;)&lt;/p&gt;</content><summary>I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “learn to analyze data first, then do it big”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with Apache Spark starts. I started learning it from this edX course. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.</summary></entry><entry><title>How to Merge Two Docker Images</title><link href="https://abdelrahmanhosny.me/How-to-Merge-Two-Docker-Images/" rel="alternate" type="text/html" title="How to Merge Two Docker Images" /><published>2015-07-11T00:00:00+02:00</published><updated>2015-07-11T00:00:00+02:00</updated><id>https://abdelrahmanhosny.me/How-to-Merge-Two-Docker-Images</id><content type="html" xml:base="https://abdelrahmanhosny.me/How-to-Merge-Two-Docker-Images/">&lt;p&gt;It’s always said, “&lt;em&gt;Do not try to re-invent the wheel!&lt;/em&gt;”. When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.&lt;/p&gt;
+&lt;p&gt;Enjoy Sparking you applications ;)&lt;/p&gt;</content><author><name></name></author><summary type="html">I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “learn to analyze data first, then do it big”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had to transform to work on a platform that satisfies my needs. Here my journey with Apache Spark starts. I started learning it from this edX course. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.</summary></entry><entry><title type="html">How to Merge Two Docker Images</title><link href="http://localhost:4000/How-to-Merge-Two-Docker-Images/" rel="alternate" type="text/html" title="How to Merge Two Docker Images" /><published>2015-07-11T00:00:00+02:00</published><updated>2015-07-11T00:00:00+02:00</updated><id>http://localhost:4000/How-to-Merge-Two-Docker-Images</id><content type="html" xml:base="http://localhost:4000/How-to-Merge-Two-Docker-Images/">&lt;p&gt;It’s always said, “&lt;em&gt;Do not try to re-invent the wheel!&lt;/em&gt;”. When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.&lt;/p&gt;
 
 &lt;p&gt;In some cases, you may want to have one container do two different jobs. In other few cases, you may want one Docker image to contain dependencies from two different Docker images. This is easily done as long as you have the Dockerfile of each image. Simply, organize them in one file and build it!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;However&lt;/strong&gt;, if you spend most of the time using ready images from Docker Hub, you do not have their source Dockerfile. I spent some time searching for a tool to use it to merge (or flatten) two different Docker images; that I don’t have their Dockerfiles. I was searching for something to do the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;image1 --
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;image1 --
             \
              ---&amp;gt; merged_image_12
             /
 image2 --
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Although this issue was closed before in two different threads (&lt;a href=&quot;https://github.com/docker/docker/issues/3378&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;https://github.com/docker/docker/issues/332&quot;&gt;2&lt;/a&gt;), it arises in some scenarios when you want to do something like that!..&lt;/p&gt;
 
 &lt;h1 id=&quot;is-it-possible-&quot;&gt;Is it possible? ..&lt;/h1&gt;
@@ -185,10 +182,9 @@ image2 --
 
 &lt;p&gt;You can not even build a Dockerfile like:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM image1
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM image1
 FROM image2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Simply, because you cannot have multiple base images in a Dockerfile.&lt;/p&gt;
 
@@ -200,17 +196,15 @@ FROM image2
 
 &lt;p&gt;On your machine, use docker pull to download the images from Docker Hub.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker pull image1
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker pull image1
 docker pull image2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then, use &lt;code class=&quot;highlighter-rouge&quot;&gt;docker history&lt;/code&gt; to get the commands that were used to build them.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker history --no-trunc=true image1 &amp;gt; image1-dockerfile
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker history --no-trunc=true image1 &amp;gt; image1-dockerfile
 docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Then, open these two files. You can then see the command stack of each image. This holds true because of the fact that Docker images are structured into layers. That is, each command you type in the Dockerfile builds a new image on top of previous images from previous commands. Therefore, you can reverse-engineer images.&lt;/p&gt;
 
 &lt;h1 id=&quot;restrictions&quot;&gt;Restrictions&lt;/h1&gt;
@@ -223,7 +217,7 @@ docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
 
 &lt;p&gt;This is because you cannot get what local files the maintainer used on his machine to include in this image.&lt;/p&gt;
 
-&lt;p&gt;Happy Reverse-Engineering :)&lt;/p&gt;</content><summary>It’s always said, “Do not try to re-invent the wheel!”. When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.</summary></entry><entry><title>Three Solutions to Bi-directional Linking Problem in Docker Compose</title><link href="https://abdelrahmanhosny.me/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose/" rel="alternate" type="text/html" title="Three Solutions to Bi-directional Linking Problem in Docker Compose" /><published>2015-07-01T00:00:00+02:00</published><updated>2015-07-01T00:00:00+02:00</updated><id>https://abdelrahmanhosny.me/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose</id><content type="html" xml:base="https://abdelrahmanhosny.me/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose/">&lt;p&gt;Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is &lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;Docker Compose&lt;/a&gt;. It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.&lt;/p&gt;
+&lt;p&gt;Happy Reverse-Engineering :)&lt;/p&gt;</content><author><name></name></author><summary type="html">It’s always said, “Do not try to re-invent the wheel!”. When working with Docker, it is a good practice to search for some ready-to-use images on Docker Hub before building you own. It is very powerful to have your software architecture distributed in a set of containers, each one does one job. And the best building block of your distributed application is to use official images from Docker Hub. You can trust their functionalities.</summary></entry><entry><title type="html">Three Solutions to Bi-directional Linking Problem in Docker Compose</title><link href="http://localhost:4000/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose/" rel="alternate" type="text/html" title="Three Solutions to Bi-directional Linking Problem in Docker Compose" /><published>2015-07-01T00:00:00+02:00</published><updated>2015-07-01T00:00:00+02:00</updated><id>http://localhost:4000/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose</id><content type="html" xml:base="http://localhost:4000/Three-Solutions-to-Bi-directional-Linking-Problem-in-Docker-Compose/">&lt;p&gt;Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is &lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;Docker Compose&lt;/a&gt;. It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.&lt;/p&gt;
 
 &lt;p&gt;Basically, a &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file looks like:&lt;/p&gt;
 
@@ -247,7 +241,7 @@ docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
 
 &lt;p&gt;Here is what you can do such that two containers see each other in a private network.&lt;/p&gt;
 
-&lt;h2 id=&quot;create-a-network&quot;&gt;1. Create a network&lt;/h2&gt;
+&lt;h2 id=&quot;1-create-a-network&quot;&gt;1. Create a network&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker network create mynetwork&lt;/code&gt;&lt;/p&gt;
 
@@ -255,7 +249,7 @@ docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker network ls&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;attach-containers-to-your-network&quot;&gt;2. Attach containers to your network&lt;/h2&gt;
+&lt;h2 id=&quot;2-attach-containers-to-your-network&quot;&gt;2. Attach containers to your network&lt;/h2&gt;
 
 &lt;p&gt;Open a terminal and run one of your containers as following:&lt;/p&gt;
 
@@ -265,7 +259,7 @@ docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it --publish-service redis.mynetwork redis&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;containers-see-each-other&quot;&gt;3. Containers see each other!&lt;/h2&gt;
+&lt;h2 id=&quot;3-containers-see-each-other&quot;&gt;3. Containers see each other!&lt;/h2&gt;
 
 &lt;p&gt;Now, from the first terminal tab, you can ping &lt;code class=&quot;highlighter-rouge&quot;&gt;redis.mynetwork&lt;/code&gt; and receive a reply. Also, from the second terminal tab, you can ping &lt;code class=&quot;highlighter-rouge&quot;&gt;web.mynetwork&lt;/code&gt; and receive a reply. That is services are published under &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;service_name&amp;gt;.&amp;lt;network_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
@@ -289,14 +283,13 @@ docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
 
 &lt;p&gt;A classical solution that I consider as a work-around is using an additional container in your docker-compose.yml file. Add the following container to your file:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnsdock:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnsdock:
  image: tonistiigi/dnsdock
  volumes:
  - /var/run/docker.sock:/run/docker.sock
  ports:
  - 172.17.42.1:53:53/udp
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And in each container you have to do the following:&lt;/p&gt;
 
@@ -304,11 +297,10 @@ docker history --no-trunc=true image2 &amp;gt; image2-dockerfile
 
 &lt;p&gt;2 . Name each container to be visible for service discovery:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; environment:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; environment:
  - DNSDOCK_NAME=web
  - DNSDOCK_IMAGE=web
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;You use environment variables for this naming. Do the same with redis container (whatever the other container your have).&lt;/p&gt;
 
 &lt;p&gt;3 . Containers see each other under the name &lt;container_name&gt;.&lt;container_name&gt;.docker
@@ -322,4 +314,4 @@ That is redis container can communicate with services on web container at web.we
 
 &lt;p&gt;Do you have other solutions? I’d be happy if you posted them here ..&lt;/p&gt;
 
-&lt;p&gt;Special Thanks to &lt;a href=&quot;https://twitter.com/thibauld&quot;&gt;Thibauld Favre&lt;/a&gt;&lt;/p&gt;</content><summary>Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is Docker Compose. It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.</summary></entry></feed>
+&lt;p&gt;Special Thanks to &lt;a href=&quot;https://twitter.com/thibauld&quot;&gt;Thibauld Favre&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Docker is one of the most trending technology platforms that gained community interest in a short time. In the simplest words, it enables developers and system admins to ship their distributed applications in an easy-to-use process. The ecosystem around Docker is so large and there are A LOT of tools that work with it. One of the most useful tools that is available is Docker Compose. It enables you to define and run multi-container applications in a single file and then spin your application up in a single command.</summary></entry></feed>
