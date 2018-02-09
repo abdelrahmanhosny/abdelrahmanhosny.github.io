@@ -6,6 +6,9 @@ teaching_nav: active
 excerpt: I divide the learning journey into three phases; Connecting, Learning and Applying, and I call it the CLA Journey. That is my teaching philosophy.
 ---
 
+## Teaching Now
+* **CS 361:** [Artifical Intelligence]({{site.base_url}}/teaching/artificial-intelligence) (Spring'18), *TA*, Assiut University
+
 ## Courses Taught
 * **CS 322:** [Computer Architecture and Operating Systems]({{site.base_url}}/teaching/computer-architecture-and-os) (Fall'17), *TA*, Assiut University
 * **CSE 3500:** Algorithms and Complexity (Fall'15, Fall'16), *TA*, University of Conneciticut

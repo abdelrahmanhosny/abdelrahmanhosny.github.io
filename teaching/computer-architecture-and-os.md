@@ -3,8 +3,10 @@ layout: default
 title: Teaching
 permalink: /teaching/computer-architecture-and-os
 teaching_nav: active
-excerpt: This is the home page for the class I'm TA'ing at Assiut University this fall'17.
+excerpt: This is the home page for the class I'm TA'ing at Assiut University in fall'17.
 ---
+
+# CS 322: Computer Architecture and Operating Systems
 
 ## Lab Notes (Koko)
 I developed a chatbot, called Koko, to study Assembly programming with you. You can use it from Facebook Messenger from the link: [https://m.me/koko.assistant](https://m.me/koko.assistant)
