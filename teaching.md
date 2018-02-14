@@ -8,6 +8,7 @@ excerpt: I divide the learning journey into three phases; Connecting, Learning a
 
 ## Teaching Now
 * **CS 361:** [Artificial Intelligence]({{site.base_url}}/teaching/artificial-intelligence) (Spring'18), *TA*, Assiut University
+* **CS 212:** [Data Structures and Algorithms]({{site.base_url}}/teaching/data-structures-algorithms) (Spring'18), *TA*, Assiut University
 
 ## Courses Taught
 * **CS 322:** [Computer Architecture and Operating Systems]({{site.base_url}}/teaching/computer-architecture-and-os) (Fall'17), *TA*, Assiut University

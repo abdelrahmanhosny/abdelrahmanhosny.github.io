@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Teaching
+title: Teaching | Computer Architecture and Operating Systems
 permalink: /teaching/computer-architecture-and-os
 teaching_nav: active
 excerpt: This is the home page for the class I'm TA'ing at Assiut University in fall'17.

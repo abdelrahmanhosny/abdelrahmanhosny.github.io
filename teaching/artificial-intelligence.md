@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Teaching
+title: Teaching | Artificial Intelligence
 permalink: /teaching/artificial-intelligence
 teaching_nav: active
 excerpt: This is the home page for the class I'm TA'ing at Assiut University in Spring'18.
