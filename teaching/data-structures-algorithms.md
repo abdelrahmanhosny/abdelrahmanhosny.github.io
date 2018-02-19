@@ -8,7 +8,11 @@ excerpt: This is the home page for the class I'm TA'ing at Assiut University in 
 
 # CS 212: Data Structures and Algorithms
 
-I'm still figuring out what we should put here :)
+I thought it would be a good idea to bring some posts I wrote in 2012 back to life. So, here are the links:
+
+1. [Introduction to Data Structures](https://abdelrahmanhosny.com/2012/07/03/data-structures/)
+2. [Data Structures - Quick Start](https://abdelrahmanhosny.com/2012/07/05/1-0-data-structures-quick-start/)
+3. [Lists - Part-1](https://abdelrahmanhosny.com/2012/07/13/2-0-data-structures-lists-1/)
 
 ## Feedback
 Like our lab sessions? Tell me what you like most to keep doing it. 
