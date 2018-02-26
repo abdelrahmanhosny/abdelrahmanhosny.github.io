@@ -13,6 +13,7 @@ I thought it would be a good idea to bring some posts I wrote in 2012 back to li
 1. [Introduction to Data Structures](https://abdelrahmanhosny.com/2012/07/03/data-structures/)
 2. [Data Structures - Quick Start](https://abdelrahmanhosny.com/2012/07/05/1-0-data-structures-quick-start/)
 3. [Lists - Part-1](https://abdelrahmanhosny.com/2012/07/13/2-0-data-structures-lists-1/)
+4. [Lists - Part-2](https://abdelrahmanhosny.com/2012/07/18/3-0-data-structures-lists-part-2/)
 
 ## Feedback
 Like our lab sessions? Tell me what you like most to keep doing it. 
