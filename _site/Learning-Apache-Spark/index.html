@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn Apache Spark On Your Desktop – Abdelrahman Hosny – Software Engineer</title> <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.abdelrahmanhosny.me/images/avatar.jpg" />
+
+
+<meta property="og:url" content="http://www.abdelrahmanhosny.me/" />
+
+
+
+<meta name="description" content="I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “learn to analyze data first, then do it big”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with Apache Spark starts. I started learning it from this edX course. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.
+
+" />
+<meta property="og:description" content="I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “learn to analyze data first, then do it big”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with Apache Spark starts. I started learning it from this edX course. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.
+
+" />
+
+<meta name="author" content="Abdelrahman Hosny" />
+
+
+<meta property="og:title" content="Learn Apache Spark On Your Desktop" />
+<meta property="twitter:title" content="Learn Apache Spark On Your Desktop" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Abdelrahman Hosny - Software Engineer" href="/feed.xml" />
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Start of Async Drift Code -->
+    <script>
+        ! function () {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"], t.factory = function (e) {
+                return function () {
+                    var n;
+                    return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                };
+            }, t.methods.forEach(function (e) {
+                t[e] = t.factory(e);
+            }), t.load = function (t) {
+                var e, n, o, i;
+                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script")
+                    , o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js"
+                    , n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+            });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('zacspwp5dykh');
+    </script>
+    <!-- End of Async Drift Code -->
+</head>
+
+<body>
+    <div class="wrapper-masthead">
+        <div class="container">
+            <header class="masthead clearfix">
+                <a href="/" class="site-avatar"><img src="https://avatars2.githubusercontent.com/u/9287641" /></a>
+                <div class="site-info">
+                    <h1 class="site-name"><a href="/">Abdelrahman Hosny</a></h1>
+                    <p class="site-description">Software Engineer</p>
+                </div>
+                <nav> <a href="/" class="">Home</a> <a href="/about" class="">About</a> <a href="/projects" class="">Projects</a> <a href="/research" class="">Research</a> <a href="/teaching" class="">Teaching</a> <a href="/blog" class="active">Blog</a> </nav>
+            </header>
+        </div>
+    </div>
+    <div id="main" role="main" class="container"> <article class="post">
+  <h1>Learn Apache Spark On Your Desktop</h1>
+
+  <div class="entry">
+    <p>I am a newbie to the field of data science and big data. Actually, I started to learn it smoothly as in the saying “<em>learn to analyze data first, then do it big</em>”. I have been performing algorithms on small data sets in various contexts to solve different problems or come up with some conclusions. Now, the data sets I work on are becoming larger and larger (order of GBs per file) that I cannot process fast. The problem becomes worse when I debug. Each run takes me minutes to get a result that I probably don’t use! So, I had  to transform to work on a platform that satisfies my needs. Here my journey with <a href="http://spark.apache.org/">Apache Spark</a> starts. I started learning it from this <a href="https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info">edX course</a>. The course material uses a virtual machine that comes with the environment pre-installed and everything ready to start learning.</p>
+
+<h1 id="is-it-fast-to-learn">Is it fast to learn?</h1>
+
+<p>At first, I thought that there is a barrier to have an environment like that to work unless someone configures it for me. I used to think that big data platforms require advanced configuration and special machine specification. However, this turns to be NOT TRUE. It is <strong>so fast</strong> to get your hands dirty with coding with Apache Spark on your desktop. No need for system admins, special servers or advanced knowledge. In this post, I will preview how to quickly write your first code with Apache Spark and run it.</p>
+
+<p>Note: In this post, I will not illustrate Spark API or code details. It is just a getting started guide to break the barrier of learning the platform. In the last section, I will mention resources to learn it.</p>
+
+<h1 id="what-is-apache-spark">What is Apache Spark?</h1>
+
+<p>Usually, you think of a traditional algorithm to process some data on a file. When the file becomes larger, you think of possible ways to reduce execution time. The first technique you probably think of is how to parallelize the execution into 2+ threads. Another technique you think of is to read the file in chunks and cache them in memory. More techniques you will think of based on the problem you have. However, all of these techniques actually distracts you from performing the actual work you want to achieve! Here comes cluster computing; and Apache Spark as a very powerful emerging platform. Apache Spark is an open-source framework for cluster computing. Don’t worry if you don’t know what cluster computing is; you don’t need it right now. As a beginner, let’s just start solving our problems of having large files with slow code, then we will have more posts on how cluster computing and Spark achieve that (If you can’t wait: check <a href="http://spark.apache.org/">Spark website</a>). Among all the amazing features tit provides, Spark will remove the hassle of parallelizing your application or providing caching. It will do it for you.</p>
+
+<h1 id="standalone-installation">Standalone Installation</h1>
+
+<p>The first step is to download Spark and unpack it. Visit the downloads page and select the package <strong>Pre-built for Hadoop 2.6 and later</strong> and choose <strong>Direct Download</strong> option. This will download a compressed file. Use any software you like to decompress it. Put the resulting folder in your preferred directory. Basically, here is the directory I have on my machine (you may have slightly different folders as there is a lot of updates to the project):</p>
+
+<p><img src="/images/learning-spark/1.png" alt="_config.yml" /></p>
+
+<ul>
+  <li><code class="highlighter-rouge">bin</code>: contains executable files that Spark provides for direct use (like the shell we will use shortly).</li>
+  <li><code class="highlighter-rouge">conf</code>: contains some configuration files that Spark loads on startup.</li>
+  <li><code class="highlighter-rouge">data</code>: contains some data sets that you can use for testing.</li>
+  <li><code class="highlighter-rouge">ec2</code>: contains a script for launching Spark clusters on Amazon EC2.</li>
+  <li><code class="highlighter-rouge">examples</code>: contains examples written in java, python, r and scala. We will use one of them shortly.</li>
+</ul>
+
+<p>Other folders are used by Spark core.</p>
+
+<h1 id="test-sparks-python-shell">Test Spark’s Python Shell</h1>
+
+<p>To test your package, open the terminal and type the command: <strong>$ ./bin/pyspark</strong> You should see the python shell working as following:</p>
+
+<p><img src="/images/learning-spark/2.png" alt="_config.yml" /></p>
+
+<p>To reduce the logging statements printed on the terminal (they are distracting!), do the following:</p>
+
+<ul>
+  <li>Open <code class="highlighter-rouge">conf</code> folder.</li>
+  <li>Copy the file <code class="highlighter-rouge">log4j.properties.template</code> to the same directory and remove the extension <code class="highlighter-rouge">.template</code></li>
+  <li>Find the line <code class="highlighter-rouge">log4j.rootCategory=INFO</code>, console and change it to log4j.rootCategory=WARN, console This will print only the warning messages.</li>
+</ul>
+
+<h1 id="run-your-first-code">Run Your First Code</h1>
+
+<p>Spark supports Java, Scala, R and Python. In this post, I use python. You can check the documentation for other language options. Let’s try a very simple ad-hoc code to count the number of occurrences of words in a file. On the terminal, write the following lines</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; lines = sc.textFile("README.md"); 
+&gt;&gt;&gt; counts = lines.flatMap(lambda x: x.split(' ')).map(lambda x: (x, 1)).reduceByKey(lambda x,y: x+y); 
+&gt;&gt;&gt; print counts.collect();
+</code></pre></div></div>
+<p>You will see the output of key-value pairs (word: count).</p>
+
+<p><img src="/images/learning-spark/3.png" alt="_config.yml" /></p>
+
+<p>Congratulations! Spark is running on your desktop :-)</p>
+
+<p>To quit the shell:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; exit();
+</code></pre></div></div>
+
+<h1 id="how-to-write-your-code-in-a-separate-file-and-execute-it">How to write your code in a separate file and execute it?</h1>
+
+<p>At this point, you have tested a very simple application from the shell. In real-world work, you use the shell only for quick debugging purposes. Usually, you have your code in file(s) and execute it. For python, you cannot simply use the terminal to write <code class="highlighter-rouge">python main.py</code> and let it execute. What you need to do is to submit the code to spark engine. We will do so with the word-count code included in the examples folder (python). Open the terminal and type the following command:</p>
+
+<p><code class="highlighter-rouge">$ bin/spark-submit examples/src/main/python/wordcount.py "README.md"</code>
+<img src="/images/learning-spark/4.png" alt="_config.yml" /></p>
+
+<p>You will see the code result. It’s a parsed word: count pairs.</p>
+
+<h1 id="whats-next--">What’s Next ? ..</h1>
+
+<p>Now, that you have a fully working Spark engine now. Let’s start learning what these APIs are all about. Here are some useful resources to get started:</p>
+
+<ul>
+  <li><a href="https://courses.edx.org/courses/BerkeleyX/CS100.1x/1T2015/info">edX Course</a> from UC Berkeley.</li>
+  <li><a href="http://shop.oreilly.com/product/0636920028512.do">Learn Spark</a> from O’Reilly.</li>
+  <li><a href="http://spark.apache.org/docs/latest/">Documentation</a> from Apache.</li>
+  <li><a href="https://databricks.com/training">Spark Training</a> from Databricks.</li>
+</ul>
+
+<p>Enjoy Sparking you applications ;)</p>
+
+  </div>
+
+  <div class="date">
+    Written on August  6, 2015
+  </div>
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'abdelrahmanhosny';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+ </div>
+    <div class="wrapper-footer">
+        <div class="container">
+            <footer class="footer"> 
+<a href="mailto:abdelrahman.hosny@ieee.org"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/abdelrahmanhosny"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/abdelrahmanhosny"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/_ahosny"><i class="svg-icon twitter"></i></a>
+
+<a href="https://youtube.com/user/abdelrahmanhosnym"><i class="svg-icon youtube"></i></a>
+<a href="https://plus.google.com/+AbdElRahmanHosny"><i class="svg-icon googleplus"></i></a> </footer>
+        </div>
+    </div> 
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74711374-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/Learning-Apache-Spark/',
+		  'title': 'Learn Apache Spark On Your Desktop'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+ </body>
+
+</html>
