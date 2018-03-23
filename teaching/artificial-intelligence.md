@@ -15,7 +15,7 @@ This class is supported by [DataCamp](http://www.datacamp.com), the most intuiti
 Fill in this form [http://eepurl.com/dkrjpf](http://eepurl.com/dkrjpf) and I will send you an invitation link to the DataCamp group. There, you will learn cool stuff in a new way and receive grades for completing assignments.
 
 ## Project
-Read full project details in [this document]({{ site.baseurl }}/teaching/AI/course-project.pdf)
+Read full project details in [this document]({{ site.baseurl }}/teaching/AI/Course-Project.pdf)
 
 ## Book
 Download this one [Artificial Intelligence - A Modern Approach]({{ site.baseurl }}/teaching/AI/Artificial-Intelligence-A- Modern-Approach.pdf)
