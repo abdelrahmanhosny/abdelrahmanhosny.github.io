@@ -15,6 +15,9 @@ I thought it would be a good idea to bring some posts I wrote in 2012 back to li
 3. [Lists - Part-1](https://abdelrahmanhosny.com/2012/07/13/2-0-data-structures-lists-1/)
 4. [Lists - Part-2](https://abdelrahmanhosny.com/2012/07/18/3-0-data-structures-lists-part-2/)
 5. [Lists - Part-3](https://abdelrahmanhosny.com/2012/07/25/4-0-data-structures-lists-part-3/)
+6. [Stacks](https://abdelrahmanhosny.com/2012/08/31/6-0-data-structures-stacks/)
+7. [Queues](https://abdelrahmanhosny.com/2012/08/05/5-0-data-structures-queues/)
+8. [Binary Search Trees](https://abdelrahmanhosny.com/2013/01/29/7-0-data-structures-bunary-search-trees/)
 
 ## Feedback
 Like our lab sessions? Tell me what you like most to keep doing it. 
