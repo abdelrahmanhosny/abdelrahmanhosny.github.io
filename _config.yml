@@ -6,7 +6,7 @@
 name: Abdelrahman Hosny
 
 # Short bio or description (displayed in the header)
-description: Software Engineer
+description: Computer Science, Business, Tech Startups
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/9287641
@@ -28,8 +28,8 @@ footer-links:
   rss: anything # just type anything here for a working RSS icon
   twitter: _ahosny
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: user/abdelrahmanhosnym # channel/<your_long_string> or user/<user-name>
-  googleplus: +AbdElRahmanHosny # anything in your profile username that comes after plus.google.com/
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts

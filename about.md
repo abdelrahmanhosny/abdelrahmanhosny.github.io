@@ -22,7 +22,7 @@ After working as a Teaching Assistant in the same school for a year, I travelled
 * **2009:** Coca-Cola Education Award, Assiut Governorate shield, Assiut Municipal Council shield, Teachers Association in Assiut shield
 
 ### Volunteering
-* **Feb. 2016 - Present**: *Webmaster* at IEEE Connecticut Section
+* **Feb. 2016 - May. 2017**: *Webmaster* at IEEE Connecticut Section
 * **November 2013**: *Team Coach* at ACM Arab Collegiate Programming Contest (ACPC), Egypt
 * **Aug. 2012 - May 2013**:	*Microsoft YouthSpark Leader*, Microsoft Citizenship, Egypt
 * **Jan. 2011 - May 2013**: *Microsoft Student Partner* at Microsoft Egypt
