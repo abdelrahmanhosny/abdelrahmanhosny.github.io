@@ -18,7 +18,7 @@ logo:                  /assets/img/logo.jpg
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   name:     Abdelrahman Hosny
-  email:    abdelrahman@brown.edu
+  email:    abdelrahman@alumni.brown.edu
   twitter:  _ahosny
 
 # Add links to the sidebar.

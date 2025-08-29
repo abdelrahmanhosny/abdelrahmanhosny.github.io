@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 abdelrahman:
   name:     Abdelrahman Hosny
-  email:    abdelrahman@brown.edu
+  email:    abdelrahman@alumni.brown.edu
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -31,7 +31,7 @@ abdelrahman:
     twitter:  _ahosny
     github:   abdelrahmanhosny
     linkedin: abdelrahmanhosny
-    email:    abdelrahman@brown.edu
+    email:    abdelrahman@alumni.brown.edu
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
