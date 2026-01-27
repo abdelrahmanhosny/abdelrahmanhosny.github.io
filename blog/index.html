@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="blog-listing">
+  <div class="container">
+    <h1>Blog</h1>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li class="post-item">
+        <a href="{{ post.url }}">
+          <h2>{{ post.title }}</h2>
+          <time>{{ post.date | date: "%B %d, %Y" }}</time>
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

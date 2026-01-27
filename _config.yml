@@ -1,0 +1,18 @@
+title: Abdelrahman Hosny
+description: AI Strategy Consultant — Bridging Research & Product
+url: "https://abdelrahmanhosny.me"
+baseurl: ""
+
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+future: true
+
+plugins:
+  - jekyll-seo-tag
