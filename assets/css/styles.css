@@ -64,20 +64,14 @@ a:hover { text-decoration: underline; }
   width: 160px; height: 160px; border-radius: 50%; object-fit: cover;
   border: 3px solid var(--gold); box-shadow: 0 0 30px rgba(201,168,76,0.15);
 }
-.hero-badges { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
-.badge {
-  display: inline-flex; flex-direction: column; align-items: center;
-  background: var(--navy-light); border: 1px solid rgba(201,168,76,0.25);
-  border-radius: 10px; padding: 0.6rem 1.2rem; transition: border-color 0.2s;
-}
-.badge:hover { border-color: var(--gold); text-decoration: none; }
-.badge-logo { width: 28px; height: 28px; border-radius: 50%; object-fit: contain; margin-bottom: 0.25rem; }
-.badge-logo-placeholder {
-  width: 28px; height: 28px; border-radius: 50%; background: rgba(201,168,76,0.15);
+.hero-socials { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+.hero-social {
+  width: 44px; height: 44px; border-radius: 50%; background: rgba(201,168,76,0.12);
   display: flex; align-items: center; justify-content: center;
-  font-weight: 700; color: var(--gold); font-size: 0.7rem;
+  color: var(--gold); transition: background 0.2s, color 0.2s;
 }
-.badge-org { font-weight: 600; color: var(--white); font-size: 0.95rem; }
+.hero-social:hover { background: var(--gold); color: var(--navy); }
+.hero-social svg { width: 22px; height: 22px; }
 .hero-tagline { font-size: 1.25rem; color: var(--gray); margin-bottom: 2rem; max-width: 540px; margin-left: auto; margin-right: auto; }
 
 .btn-gold {
@@ -115,19 +109,25 @@ a:hover { text-decoration: underline; }
   transition: border-color 0.2s;
 }
 .journey-card:hover { border-color: var(--gold); }
-.journey-logo-wrap { margin-bottom: 0.75rem; }
+.journey-logo-wrap { margin-bottom: 0.75rem; position: relative; display: inline-block; }
 .journey-logo {
-  width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+  width: 80px; height: 80px; border-radius: 50%; object-fit: cover;
 }
 .journey-logo-placeholder {
-  width: 48px; height: 48px; border-radius: 50%; background: rgba(201,168,76,0.12);
+  width: 72px; height: 72px; border-radius: 50%; background: rgba(201,168,76,0.12);
   display: inline-flex; align-items: center; justify-content: center;
-  font-weight: 700; color: var(--gold); font-size: 0.85rem;
+  font-weight: 700; color: var(--gold); font-size: 1.1rem;
 }
 .journey-card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
 .journey-role { font-size: 0.85rem; color: var(--gray); }
 .journey-year { font-size: 0.8rem; color: var(--gold); margin-top: 0.5rem; }
-.journey-yc { font-size: 0.7rem; font-weight: 600; color: #f26522; background: rgba(242,101,34,0.12); display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; margin-top: 0.35rem; }
+.journey-yc-bubble {
+  position: absolute; bottom: 0; right: -4px;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: #f26522; color: #fff; font-size: 0.55rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid var(--navy);
+}
 
 /* === Contact === */
 .contact { padding: 6rem 0; text-align: center; }
