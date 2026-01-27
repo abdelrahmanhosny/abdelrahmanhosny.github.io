@@ -15,6 +15,14 @@ links.querySelectorAll('a').forEach(link => {
   });
 });
 
+// Close mobile nav on outside click
+document.addEventListener('click', (e) => {
+  if (links.classList.contains('open') && !links.contains(e.target) && !toggle.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.classList.remove('open');
+  }
+});
+
 // Navbar background on scroll
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
