@@ -9,19 +9,19 @@ description: "In these posts, I give a hands-on tutorial on using the OpenROAD a
 In the [previous post](/blog/getting-started-with-openroad-1/), I have given a brief introduction on physical design and the steps needed to manufacture a hardware circuit. In this post, I will showcase the use of OpenROAD tools to perform the tasks discussed in the physical design process.
 
 
-# Prerequisites
+## Prerequisites
 
-## Machine specs
+### Machine specs
 To follow up with this tutorial, we recommend the use of a machine with 4GB+ of RAM to build and run the tools. However, if you are using big designs, more memory is required for the tools to perform their computations in a timely manner.
 
 > Disclaimer: I'm part of OpenROAD project team. Thanks to all my colleagues for putting together this effort.
 
 > NOTE: If you are reading this post after July 2020, the chances are that this post is obsolete and there is another up-to-date writing on OpenROAD. Please, see other posts on this blog or refer to the OpenROAD website.
 
-## Operating system
+### Operating system
 While the tools can theoretically be built on Linux, Windows and Mac, they have been tested only on CentOS 7. If you have a MacOS or a Windows machine, please, [install Docker](https://docs.docker.com/v17.09/engine/installation/) to follow up with the tutorial.
 
-## Install the required packages
+### Install the required packages
 
 ### Bare-metal
 
