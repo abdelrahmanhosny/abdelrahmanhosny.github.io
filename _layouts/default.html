@@ -11,6 +11,75 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/styles.css">
   {% seo %}
+  {% if page.layout == 'home' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdelrahman Hosny",
+    "url": "https://abdelrahmanhosny.me",
+    "image": "https://abdelrahmanhosny.me/assets/images/Headshot.JPG",
+    "jobTitle": "AI Strategy Consultant",
+    "description": "AI Strategy Consultant helping organizations turn AI research into real products with open source technologies.",
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Open Source", "AI Strategy", "ML Infrastructure"],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Brown University",
+        "url": "https://www.brown.edu"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Connecticut",
+        "url": "https://uconn.edu"
+      },
+      {
+        "@type": "Organization",
+        "name": "Apple",
+        "url": "https://www.apple.com"
+      },
+      {
+        "@type": "Organization",
+        "name": "Y Combinator",
+        "url": "https://www.ycombinator.com"
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Canonical",
+      "url": "https://canonical.com"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "PhD",
+        "educationalLevel": "Doctoral",
+        "about": "Computer Science",
+        "recognizedBy": {
+          "@type": "CollegeOrUniversity",
+          "name": "Brown University"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Master's Degree",
+        "educationalLevel": "Master",
+        "about": "Computer Science",
+        "recognizedBy": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Connecticut"
+        }
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/abdelrahmanhosny",
+      "https://github.com/abdelrahmanhosny",
+      "https://x.com/_ahosny",
+      "https://scholar.google.com/citations?user=_OTKWysAAAAJ"
+    ]
+  }
+  </script>
+  {% endif %}
   <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWB4WPRJXJ"></script>
   <script>
