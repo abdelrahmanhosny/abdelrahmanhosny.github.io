@@ -2,17 +2,36 @@ title: Abdelrahman Hosny
 description: AI Strategy Consultant — Bridging Research & Product
 url: "https://abdelrahmanhosny.me"
 baseurl: ""
+image: /assets/images/Headshot.JPG
 
 permalink: /blog/:title/
 
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/images/Headshot.JPG
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: post
+      image: /assets/images/Headshot.JPG
 
 future: true
 
+author:
+  name: Abdelrahman Hosny
+  url: https://www.linkedin.com/in/abdelrahmanhosny
+
+social:
+  name: Abdelrahman Hosny
+  links:
+    - https://www.linkedin.com/in/abdelrahmanhosny
+    - https://github.com/abdelrahmanhosny
+    - https://x.com/_ahosny
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

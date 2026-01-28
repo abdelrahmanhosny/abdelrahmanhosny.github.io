@@ -2,6 +2,7 @@
 layout: post
 title: "Caching Builds with Docker Build Branching"
 date: 2019-09-19
+image: /assets/images/Headshot.JPG
 description: "This post describes a technical failure story and gives reasons why it failed. I was trying to use a Docker environment to build a C++ project and cache the build artifacts to not build them again if they are not changed (utilizing Makefiles)."
 ---
 

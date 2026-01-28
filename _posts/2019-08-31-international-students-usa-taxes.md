@@ -2,6 +2,7 @@
 layout: post
 title: "International Students - Understand USA Tax Jargon"
 date: 2019-08-31
+image: /assets/images/Headshot.JPG
 description: "As a new international student arriving in the US ~4 years ago, I was puzzled by all-things tax-related, especially that I arrived in the Spring semester (tax season). Why is it so complicated?"
 ---
 

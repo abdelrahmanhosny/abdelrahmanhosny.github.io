@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Started with OpenROAD (Part 1)"
 date: 2019-12-06
+image: /assets/images/Headshot.JPG
 description: "In these posts, I give a hands-on tutorial on using the OpenROAD application."
 ---
 

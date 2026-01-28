@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdelrahmanhosny.me/sitemap.xml
