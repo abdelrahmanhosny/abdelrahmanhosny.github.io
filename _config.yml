@@ -2,7 +2,7 @@ title: Abdelrahman Hosny
 description: AI Strategy Consultant — Bridging Research & Product
 url: "https://abdelrahmanhosny.me"
 baseurl: ""
-image: /assets/images/Headshot.JPG
+image: /assets/images/Headshot.webp
 
 permalink: /blog/:title/
 
@@ -10,13 +10,13 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/Headshot.JPG
+      image: /assets/images/Headshot.webp
   - scope:
       path: ""
       type: "posts"
     values:
       layout: post
-      image: /assets/images/Headshot.JPG
+      image: /assets/images/Headshot.webp
 
 future: true
 

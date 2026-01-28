@@ -2,7 +2,7 @@
 layout: post
 title: "Installing Jenkins on Google Cloud Platform"
 date: 2019-09-23
-image: /assets/images/Headshot.JPG
+image: /assets/images/Headshot.webp
 description: "In this post, I explain how to correctly set up a production-ready FREE Jenkins installation on Google Cloud Platform."
 ---
 
