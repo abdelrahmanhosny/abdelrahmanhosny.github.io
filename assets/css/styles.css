@@ -58,7 +58,8 @@ a:hover { text-decoration: underline; }
 .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
 /* === Hero === */
-.hero { text-align: center; padding: 10rem 1.5rem 5rem; }
+.hero { text-align: center; padding: 10rem 1.5rem 3rem; }
+.hero .container { display: flex; flex-direction: column; align-items: center; }
 .hero-headshot { margin-bottom: 1.5rem; }
 .hero-headshot img {
   width: 160px; height: 160px; border-radius: 50%; object-fit: cover;
@@ -82,7 +83,7 @@ a:hover { text-decoration: underline; }
 .btn-gold:hover { opacity: 0.9; text-decoration: none; }
 
 /* === About === */
-.about { padding: 6rem 0; }
+.about { padding: 3rem 0; }
 .about h2 { font-size: 2rem; margin-bottom: 1.5rem; }
 .about-text p { color: var(--gray); margin-bottom: 1rem; max-width: 720px; }
 .stats-row {
@@ -93,7 +94,7 @@ a:hover { text-decoration: underline; }
 .stat-label { font-size: 0.85rem; color: var(--gray); }
 
 /* === Journey === */
-.journey { padding: 6rem 0 4rem; }
+.journey { padding: 3rem 0 2rem; }
 .journey h2 { font-size: 2rem; margin-bottom: 1.5rem; }
 .journey-scroll {
   display: flex; gap: 1.25rem; overflow-x: auto; scroll-behavior: smooth;
@@ -129,8 +130,30 @@ a:hover { text-decoration: underline; }
   border: 2px solid var(--navy);
 }
 
+/* === Thought Leadership === */
+.thought-leadership { padding: 2rem 0; }
+.whitepaper-card {
+  display: block; background: var(--navy-light); border-radius: 12px;
+  padding: 2rem 2.5rem; border: 1px solid rgba(201,168,76,0.2);
+  transition: border-color 0.2s; max-width: 800px;
+}
+.whitepaper-card:hover { border-color: var(--gold); text-decoration: none; }
+.whitepaper-meta { margin-bottom: 0.75rem; }
+.whitepaper-type {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--gold);
+  border: 1px solid rgba(201,168,76,0.4); border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+}
+.whitepaper-title {
+  font-family: var(--font-heading); font-size: 1.4rem;
+  color: var(--white); margin: 0.75rem 0 1rem; line-height: 1.4;
+}
+.whitepaper-desc { color: var(--gray); font-size: 0.95rem; margin-bottom: 0.75rem; }
+.whitepaper-cta { display: inline-block; color: var(--gold); font-weight: 600; font-size: 0.95rem; margin-top: 0.5rem; }
+
 /* === Contact === */
-.contact { padding: 6rem 0; text-align: center; }
+.contact { padding: 3rem 0; text-align: center; }
 .contact h2 { font-size: 2rem; margin-bottom: 2rem; }
 .tally-placeholder {
   background: var(--navy-light); border-radius: 12px; padding: 3rem;
