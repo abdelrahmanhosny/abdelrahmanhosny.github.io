@@ -26,8 +26,8 @@ External funding: training becomes analogous to financing education. Just as fin
 
 In summary, revenue accrues to utility, not tokens. Sustainability depends on reducing marginal training cost through reuse, aligning model size to task requirements, and shifting part of the financing burden off the balance sheet into structured, return-linked funding.
 
-[1] https://x.com/VladBastion/status/1795152160558035367 
+[1] [https://x.com/VladBastion/status/1795152160558035367](https://x.com/VladBastion/status/1795152160558035367 )
 
-[2] https://finance.yahoo.com/news/anthropic-tops-30-billion-run-221045473.html 
+[2] [https://finance.yahoo.com/news/anthropic-tops-30-billion-run-221045473.html](https://x.com/VladBastion/status/1795152160558035367 )
 
-[3] https://ntrs.nasa.gov/api/citations/20200001093/downloads/20200001093.pdf
+[3] [https://ntrs.nasa.gov/api/citations/20200001093/downloads/20200001093.pdf](https://x.com/VladBastion/status/1795152160558035367)
